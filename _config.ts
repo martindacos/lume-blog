@@ -10,11 +10,7 @@ import pageFind from "lume/plugins/pagefind.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import feed from "lume/plugins/feed.ts";
 
-const site = lume({
-  location: new URL("https://example.com/"),
-});
-
-site
+const site = lume()
   .ignore("README.md")
   .copy("img")
   .use(postcss())
